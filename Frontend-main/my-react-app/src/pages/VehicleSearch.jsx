@@ -92,15 +92,15 @@ const VehicleSearch = () => {
             <div className="flex items-center gap-2">
               <span className="text-2xl">⏱️</span>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Start Time</p>
-                <p className="font-semibold">{formatDateTime(vehicleDetails.startTime)}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Location</p>
+                <p className="font-semibold">{vehicleDetails.location}</p>
               </div>
             </div>
             
             <div className="flex items-center gap-2">
               <span className="text-2xl">⏰</span>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">End Time</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Time</p>
                 <p className="font-semibold">{formatDateTime(vehicleDetails.endTime)}</p>
               </div>
             </div>

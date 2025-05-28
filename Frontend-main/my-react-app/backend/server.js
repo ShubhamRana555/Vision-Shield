@@ -115,9 +115,9 @@ app.get('/api/vehicles/search', (req, res) => {
         // Map the database columns to the expected response format
         // Using bracket notation to access properties with spaces
         const response = {
-          startTime: row["Start Time"] || row["start_time"] || row["startTime"] || 'Unknown',
+          location: row["Location"] || row["location"] || row["Location"] || 'Unknown',
           endTime: row["End Time"] || row["end_time"] || row["endTime"] || 'Unknown',
-          licensePlate: row["License Plate"] || row["license_plate"] || row["licensePlate"] || 'Unknown'
+          licensePlate: row["License Plate"] || row["license_plate"] || row["licensePlate"] || 'Unknown',
         };
 
         console.log('Processed response:', response);
