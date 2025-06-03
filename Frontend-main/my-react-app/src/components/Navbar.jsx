@@ -28,12 +28,12 @@ const Navbar = ({ sidebarCollapsed }) => {
           >
             Implementation
           </Link>
-          <Link
+          {/* <Link
             to="/predict"
             className="text-gray-700 dark:text-gray-200 hover:text-blue-600"
           >
             Predict
-          </Link>
+          </Link> */}
         </nav>
 
         <div>

@@ -27,11 +27,7 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
       icon: <FileSearch size={18} />,
       text: "Vehicle Lookup",
     },
-    {
-      to: "/implementation",
-      icon: <Upload size={18} />,
-      text: "Upload Image",
-    },
+    
   ];
 
   return (
@@ -79,8 +75,8 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
       </div>
 
       {/* Bottom section */}
-      <div className="space-y-3">
         {/* Dark Mode Toggle */}
+      {/*<div className="space-y-3">
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="flex items-center gap-2 text-gray-600 dark:text-gray-200 hover:text-blue-600"
@@ -89,7 +85,7 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
           {!collapsed && <span>{darkMode ? "Light Mode" : "Dark Mode"}</span>}
         </button>
 
-        {/* Logout Button */}
+        
         <button
           onClick={signOut}
           className="flex items-center gap-2 text-gray-600 dark:text-gray-200 hover:text-red-600"
@@ -97,7 +93,7 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
           <LogOut size={18} />
           {!collapsed && <span>Logout</span>}
         </button>
-      </div>
+      </div> */}
     </aside>
   );
 };
